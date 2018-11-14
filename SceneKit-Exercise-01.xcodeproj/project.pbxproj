@@ -18,6 +18,7 @@
 		CF5F123E20023D3C00929BE9 /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123D20023D3C00929BE9 /* MoveComponent.swift */; };
 		CF5F1240200241A100929BE9 /* BoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123F200241A100929BE9 /* BoxComponent.swift */; };
 		CF5F1242200245E500929BE9 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F1241200245E500929BE9 /* PhysicsComponent.swift */; };
+		DDD80FE1219C32B100897BC4 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD80FE0219C32B100897BC4 /* ScoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CF5F123D20023D3C00929BE9 /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
 		CF5F123F200241A100929BE9 /* BoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxComponent.swift; sourceTree = "<group>"; };
 		CF5F1241200245E500929BE9 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
+		DDD80FE0219C32B100897BC4 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				CF5F123520023AC600929BE9 /* EntityManager.swift */,
 				CF5F123720023C0000929BE9 /* Components */,
+				DDD80FE0219C32B100897BC4 /* ScoreManager.swift */,
 			);
 			path = ECS;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				CF5F1242200245E500929BE9 /* PhysicsComponent.swift in Sources */,
 				4BB285D020009BC500CF2299 /* AppDelegate.swift in Sources */,
 				CF5F123E20023D3C00929BE9 /* MoveComponent.swift in Sources */,
+				DDD80FE1219C32B100897BC4 /* ScoreManager.swift in Sources */,
 				CF5F1240200241A100929BE9 /* BoxComponent.swift in Sources */,
 				CF5F123620023AC600929BE9 /* EntityManager.swift in Sources */,
 				CF5F123920023C1500929BE9 /* NodeComponent.swift in Sources */,
