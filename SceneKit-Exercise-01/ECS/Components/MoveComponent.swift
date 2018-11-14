@@ -13,6 +13,9 @@ class MoveComponent: GKComponent {
     
     var node: SCNNode!
     let movementInterval: TimeInterval = 3
+    let lowerValue = -3
+    let upperValue = 3
+    let y = 3
     
     private var time: TimeInterval = 0
     
@@ -30,10 +33,13 @@ class MoveComponent: GKComponent {
 
         time += seconds
         
-        // TODO: Make box movement better
         if time > movementInterval {
             time = 0
-            node.physicsBody?.applyForce(SCNVector3(0,3,0), asImpulse: true)
+            
+            let x = Int(arc4random_uniform(UInt32(upperValue - lowerValue + 1))) + lowerValue
+            let z = Int(arc4random_uniform(UInt32(upperValue - lowerValue + 1))) + lowerValue
+            
+            node.physicsBody?.applyForce(SCNVector3(x,y,z), asImpulse: true)
         }
         
     }
