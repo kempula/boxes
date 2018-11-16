@@ -18,6 +18,7 @@
 		CF5F123E20023D3C00929BE9 /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123D20023D3C00929BE9 /* MoveComponent.swift */; };
 		CF5F1240200241A100929BE9 /* BoxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F123F200241A100929BE9 /* BoxComponent.swift */; };
 		CF5F1242200245E500929BE9 /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5F1241200245E500929BE9 /* PhysicsComponent.swift */; };
+		DD2E6DB2219DF85C00A5CE17 /* ScoreOverlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E6DB1219DF85C00A5CE17 /* ScoreOverlayScene.swift */; };
 		DDD80FE1219C32B100897BC4 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD80FE0219C32B100897BC4 /* ScoreManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		CF5F123D20023D3C00929BE9 /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
 		CF5F123F200241A100929BE9 /* BoxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxComponent.swift; sourceTree = "<group>"; };
 		CF5F1241200245E500929BE9 /* PhysicsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
+		DD2E6DB1219DF85C00A5CE17 /* ScoreOverlayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreOverlayScene.swift; sourceTree = "<group>"; };
 		DDD80FE0219C32B100897BC4 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				CF5F123320023A9C00929BE9 /* ECS */,
 				4BB285CF20009BC500CF2299 /* AppDelegate.swift */,
 				4BB285D120009BC500CF2299 /* GameViewController.swift */,
+				DD2E6DB1219DF85C00A5CE17 /* ScoreOverlayScene.swift */,
 				4BB285D320009BC500CF2299 /* art.scnassets */,
 				4BB285D520009BC500CF2299 /* Assets.xcassets */,
 				4BB285D720009BC500CF2299 /* Main.storyboard */,
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2E6DB2219DF85C00A5CE17 /* ScoreOverlayScene.swift in Sources */,
 				4BB285D220009BC500CF2299 /* GameViewController.swift in Sources */,
 				CF5F1242200245E500929BE9 /* PhysicsComponent.swift in Sources */,
 				4BB285D020009BC500CF2299 /* AppDelegate.swift in Sources */,
