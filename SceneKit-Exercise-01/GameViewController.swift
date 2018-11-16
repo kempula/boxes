@@ -9,6 +9,7 @@
 import GameplayKit
 import SceneKit
 import QuartzCore
+import SpriteKit
 
 class GameViewController: NSViewController, SCNSceneRendererDelegate {
     
@@ -17,6 +18,8 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
     let spawnInterval: TimeInterval = 2
     var spawnTime: TimeInterval = 0
     var spawnPosition = SCNVector3(x: 0.0, y: 4.0, z: 0.0)
+    var scoreManager: ScoreManager!
+    var scoreOverlayScene: ScoreOverlayScene!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +42,16 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
         entityManager.add(moveSystem)
         
         spawnTime = spawnInterval
+        
+        scoreManager = ScoreManager()
+        setupScoreHUD(scnView: scnView)
+    }
+    
+    func setupScoreHUD(scnView: SCNView) {
+        let size = CGSize(width: self.view.frame.maxX, height: self.view.frame.maxY)
+        scoreOverlayScene = ScoreOverlayScene(size: size)
+        scnView.overlaySKScene = scoreOverlayScene
+        scnView.overlaySKScene!.isUserInteractionEnabled = false
     }
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
@@ -125,6 +138,12 @@ class GameViewController: NSViewController, SCNSceneRendererDelegate {
             material.emission.contents = NSColor.red
             
             SCNTransaction.commit()
+            
+            //add points to score
+            scoreManager.addPoints(points: 10)
+            
+            //update HUD
+            scoreOverlayScene.updateScoreText(points: scoreManager.getScore())
         }
     }
 }
